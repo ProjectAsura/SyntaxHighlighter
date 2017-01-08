@@ -1,33 +1,33 @@
-# SyntaxHighlighter
-Custom brush for SyntaxHighlighter Evolved.
-HLSLŒü‚¯‚ÌSyntaxHighlighter‚ª–³‚©‚Á‚½‚Ì‚Åì‚Á‚Ä‚İ‚Ü‚µ‚½B  
+ï»¿# SyntaxHighlighter
+Custom brush for SyntaxHighlighter Evolved(<https://github.com/Viper007Bond/syntaxhighlighter>).  
+HLSLå‘ã‘ã®SyntaxHighlighterãŒç„¡ã‹ã£ãŸã®ã§ä½œã£ã¦ã¿ã¾ã—ãŸã€‚  
 
 # License
-This software is distributed under GNU GENERAL PUBLIC LICENSE v3. For details, see LICENCE file.
-ƒ‰ƒCƒZƒ“ƒX‚ÍSyntaxHighlighter©‘Ì‚ªGPL‚É‚È‚Á‚Ä‚¢‚é‚Ì‚ÅC–{‰Æ‚É‡‚¤‚æ‚¤GPL‚É‚µ‚Ä‚¢‚Ü‚·B  
+This software is distributed under GNU GENERAL PUBLIC LICENSE v3. For details, see LICENCE file.  
+ãƒ©ã‚¤ã‚»ãƒ³ã‚¹ã¯SyntaxHighlighterè‡ªä½“ãŒGPLã«ãªã£ã¦ã„ã‚‹ã®ã§ï¼Œæœ¬å®¶ã«åˆã†ã‚ˆã†GPLã«ã—ã¦ã„ã¾ã™ã€‚  
 
 ## Integration
-‘g‚İ‚İ•û–@‚Í3ƒXƒeƒbƒv‚Å‚·B
+çµ„ã¿è¾¼ã¿æ–¹æ³•ã¯3ã‚¹ãƒ†ãƒƒãƒ—ã§ã™ã€‚  
 
-### Step.1
-third-party-brushesƒtƒHƒ‹ƒ_‚ÉCshBrushHlsl.js‚ğ’u‚«‚Ü‚·B
+### Step.1  
+third-party-brushesãƒ•ã‚©ãƒ«ãƒ€ã«ï¼ŒshBrushHlsl.jsã‚’ç½®ãã¾ã™ã€‚  
 
-### Step.2 
-syntaxhighlighter.php‚ğŠJ‚¢‚Ä147s–Ú•t‹ß‚É  
+### Step.2  
+syntaxhighlighter.phpã‚’é–‹ã„ã¦147è¡Œç›®ä»˜è¿‘ã«  
 
 ~~~~~{.php}
 		wp_register_script( 'syntaxhighlighter-brush-hlsl',       plugins_url( 'third-party-brushes/shBrushHlsl.js',              __FILE__ ), array('syntaxhighlighter-core'), '20170108'     );
 ~~~~~
 
-‚ğ’Ç‰Á‚µ‚Ü‚·B
+ã‚’è¿½åŠ ã—ã¾ã™ã€‚
 
-### Step.3
+### Step.3  
 
-syntaxhighlighter.php‚ğŠJ‚¢‚Ä185s–Ú•t‹ß‚É  
+syntaxhighlighter.phpã‚’é–‹ã„ã¦185è¡Œç›®ä»˜è¿‘ã«  
 ~~~~~{.php}
 			'hlsl'          => 'hlsl',
 			'fx'            => 'hlsl',
 ~~~~~
-‚ğ’Ç‰Á‚µ‚Ü‚·B  
+ã‚’è¿½åŠ ã—ã¾ã™ã€‚  
 
 
