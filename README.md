@@ -10,7 +10,7 @@ This software is distributed under GNU GENERAL PUBLIC LICENSE v3. For details, s
 組み込み方法は3ステップです。  
 
 ### Step.1  
-third-party-brushesフォルダに，shBrushHlsl.jsを置きます。  
+SyntaxHighlighter Evolveのthird-party-brushesフォルダに，shBrushHlsl.jsとshBrushGlsl.jsを置きます。  
 
 ### Step.2  
 syntaxhighlighter.phpを開いて147行目付近に  
