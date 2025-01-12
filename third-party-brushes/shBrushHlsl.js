@@ -12,13 +12,13 @@ SyntaxHighlighter.brushes.Hlsl = function () {
                     'float1x1 float1x2 float1x3 float1x4 float2x1 float2x2 float2x3 float2x4 float3x1 float3x2 float3x3 float3x4 float4x1 float4x2 float4x3 float4x4 ' +
                     'double1x1 double1x2 double1x3 double1x4 double2x1 double2x2 double2x3 double2x4 double3x1 double3x2 double3x3 double3x4 double4x1 double4x2 double4x3 double4x4';
 
-    var keywords = 'AppendStructuredBuffer asm asm_fragment BlendState bool break Buffer ByteAddressBuffer ' +
+    var keywords = 'AppendStructuredBuffer AmplificationShader asm asm_fragment BlendState bool break Buffer ByteAddressBuffer ' +
                     'case cbuffer centroid class column_major compile compile_fragment CompileShader const continue ComputeShader ComsumeStructuredBuffer ' +
                     'default DepthStencil DepthStencilView discard do DomainShader ' +
                     'else export extern false for fxgroup GeometryShader groupshared HullShader ' +
                     'if in inline inout InputPath interface line lineadj linear LineStrem ' +
-                    'matrix namespace nointerpolation noperspective NULL out OutPatch packoffset pass pixelfragment PixelShader point PointStream precise ' +
-                    'RasterizerState RenderTargetView return register row_major RWBuffer RWByteAddressBuffer RWStructuredBuffer RWTexture1D ' +
+                    'matrix MeshShader namespace nointerpolation noperspective NULL numthreads out OutPatch OutputTopology packoffset pass payload pixelfragment PixelShader point PointStream precise ' +
+                    'RasterizerState RenderTargetView return register RootSignature row_major RWBuffer RWByteAddressBuffer RWStructuredBuffer RWTexture1D ' +
                     'RWTexture1DArray RWTexture2D RWTexture2DArray RWTexture3D sample sampler SamplerState SamplerComparisionState shared snorm ' +
                     'stateblock stateblock_state static string struct switch StructuredBuffer tbuffer technique technique10 technique11 ' +
                     'texture Texture1D Texture1DArray Texture2D Texture2DArray Texture2DMS Texture2DMSArray Texture3D TextureCube TextureCubeArray ' +
@@ -27,13 +27,15 @@ SyntaxHighlighter.brushes.Hlsl = function () {
     var functions = 'auto abort abs acos all any asdouble asfloat asin asint asuint atan atan2 ' +
                     'case catch const_cast ceil clamp cilp cos cosh countbits cross default delete dynamic_cast ddx ddx_coarse ddx_fine ddy ddy_coarse ddy_fine ' +
                     'degrees determinant distant dot dst errorf enum explicit exp exp2 f16tof32 f32tof16 friend goto ' +
-                    'long mutable new operator private protected public reinterpret_cast short signed sizeof static_cast' +
+                    'long mutable new operator private protected public QuadReadActossDiagonal QuadReadAcrossX QuadReadAcrossY QuadReadLaneAt reinterpret_cast short signed sizeof static_cast' +
                     'faceforward firstbithigh firstbitlow floor fma fmod frac frexp fwidth ' +
                     'isfinite isinf isnan ldexp length lerp lit log log10 log2 mad max min modf msad4 mul ' +
                     'noise normalize pow printf radians rcp reflect refract reservebits round rsqrt saturate ' +
                     'sign sin sincos sinh smoothstep template this throw try typename union using virtual ' +
                     'sqrt step tan tanh tex1D tex1Dbias tex1Dgrad tex1Dlog tex1Dproj tex2D tex2Dbias tex2Dgrad tex2Dlod tex2Dproj ' +
-                    'tex3D tex3Dbias tex3Dgrad tex3Dlog tex3Dproj texCUBE texCUBEbias texCUBEgrad texCUBElod texCUBEproj transpose trunc';
+                    'tex3D tex3Dbias tex3Dgrad tex3Dlog tex3Dproj texCUBE texCUBEbias texCUBEgrad texCUBElod texCUBEproj transpose trunc ' +
+                    'WaveActiveAnyTrue WaveActiveAllTrue WaveActiveBallot WaveActiveBitAnd WaveActiveBitOr WaveActiveBitXor WaveActiveCountBits WaveActiveMax WaveActiveMin WaveActiveProduct WaveActiveSum ' +
+                    'WaveGetLaneCount WaveGetLaneIndex WaveIsFirstLane WavePrefixCountBits WavePrefixSum WavePrefixProduct WaveReadLaneAt WaveReadLaneFirst';
 
     this.regexList = [
         { regex: SyntaxHighlighter.regexLib.singleLineCComments, css: 'comments' },         // one line comments
@@ -47,5 +49,5 @@ SyntaxHighlighter.brushes.Hlsl = function () {
     ];
 };
 SyntaxHighlighter.brushes.Hlsl.prototype = new SyntaxHighlighter.Highlighter();
-SyntaxHighlighter.brushes.Hlsl.aliases = ['hlsl', 'fx'];
+SyntaxHighlighter.brushes.Hlsl.aliases = ['hlsl', 'hlsli', 'fx'];
 

@@ -38,6 +38,16 @@ syntaxhighlighter.phpを開いて187行目付近(groovyの後ぐらい)に
 ~~~~~
 を追加します。  
 
+### Step.4
+
+syntaxhighlighter.phpを開いて，274行目付近に  
+~~~~~{.php}
+			'glsl'       => __( 'GLSL',                      'syntaxhighlighter' ),
+			'hlsl'       => __( 'HLSL',                      'syntaxhighlighter' ),
+~~~~~
+を追加します。  
+
+
 ## How to use ?
 
 後は普通のSyntaxHighlighterを適用するのと同じように  
